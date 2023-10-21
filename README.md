@@ -1,6 +1,8 @@
 # todo_project
 
-A new Flutter project.
+This is simple to do application based on Flutter.
+
+
 
 ## Getting Started
 
