@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:todo_project/models/model.dart';
-import 'package:todo_project/view_models/fast_add_tasks.dart';
 
 class AppViewModel extends ChangeNotifier {
-  List<TaskModel> listTasks = addTasks();
+  List<TaskModel> listTasks = <TaskModel>[];
 
   int get lengthTasks => listTasks.length;
 

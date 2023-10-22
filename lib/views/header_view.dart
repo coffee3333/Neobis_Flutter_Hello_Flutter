@@ -7,15 +7,20 @@ class HeaderInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Colors.grey.shade200,
-          borderRadius: const BorderRadius.all(Radius.circular(30))),
+        color: Colors.grey.shade200,
+        borderRadius: const BorderRadius.all(
+          Radius.circular(30),
+        ),
+      ),
       alignment: Alignment.centerLeft,
       padding: const EdgeInsetsDirectional.symmetric(horizontal: 15),
-      child: Text("To do list".toUpperCase(),
-          style: const TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-              fontStyle: FontStyle.normal)),
+      child: Text(
+        "To do list".toUpperCase(),
+        style: const TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.normal),
+      ),
     );
   }
 }
