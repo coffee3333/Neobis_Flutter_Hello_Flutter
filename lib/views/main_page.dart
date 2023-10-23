@@ -9,7 +9,6 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.grey,
       appBar: CustomAppBar(),
       body: TaskListView(),
       floatingActionButton: AddTaskView(),

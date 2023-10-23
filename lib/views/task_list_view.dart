@@ -13,7 +13,7 @@ class TaskListView extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.only(top: 15),
           decoration: BoxDecoration(
-            color: Colors.grey.shade200,
+            color: viewModel.colorConst.clrLvl2,
             borderRadius: const BorderRadius.vertical(
               top: Radius.circular(30),
             ),
@@ -39,15 +39,15 @@ class TaskListView extends StatelessWidget {
             background: Container(
               margin: const EdgeInsets.symmetric(horizontal: 5),
               decoration: BoxDecoration(
-                  color: Colors.red.shade300,
+                  color: viewModel.colorConst.clrRdl6,
                   borderRadius: BorderRadius.circular(10)),
               child: Center(
-                child: Icon(Icons.delete, color: Colors.red.shade700),
+                child: Icon(Icons.delete, color: viewModel.colorConst.clrRdl5),
               ),
             ),
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.grey.shade50,
+                color: viewModel.colorConst.clrLvl1,
                 borderRadius: const BorderRadius.all(
                   Radius.circular(30),
                 ),
