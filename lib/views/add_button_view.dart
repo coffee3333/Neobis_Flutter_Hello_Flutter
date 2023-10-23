@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_project/assets/consts/Colors.dart';
 import 'package:todo_project/view_models/app_view_model.dart';
 import 'package:todo_project/views/add_dialog_view.dart';
 
