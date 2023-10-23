@@ -6,7 +6,6 @@ import 'package:todo_project/view_models/app_view_model.dart';
 class DialogView extends StatelessWidget {
   DialogView({super.key});
   final TextEditingController _textAddTitleController = TextEditingController();
-  final TextEditingController _textAddDescController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -19,29 +18,22 @@ class DialogView extends StatelessWidget {
             labelText: "Title",
           ),
         ),
-        content: TextField(
-          controller: _textAddDescController,
-          maxLines: 4,
-          decoration: const InputDecoration(
-            border: OutlineInputBorder(),
-            labelText: "Descripton",
-          ),
-        ),
         actions: <Widget>[
           TextButton(
             onPressed: () {
-              TaskModel newTask = TaskModel(_textAddTitleController.text,
-                  _textAddDescController.text, false);
-              viewModel.addTask(newTask);
+              if (_textAddTitleController.text.isNotEmpty) {
+                TaskModel newTask = TaskModel(_textAddTitleController.text);
+                viewModel.addTask(newTask);
+              }
               Navigator.of(context).pop();
             },
-            child: Text('OK'),
+            child: const Text('OK'),
           ),
           TextButton(
             onPressed: () {
               Navigator.of(context).pop();
             },
-            child: Text('Cancel'),
+            child: const Text('Cancel'),
           )
         ],
       );
